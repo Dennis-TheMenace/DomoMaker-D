@@ -21,7 +21,7 @@ const DomoSchema = new mongoose.Schema({
     },
   fruit:
   {
-    type:String,
+    type: String,
     required: true,
     trim: true,
   },

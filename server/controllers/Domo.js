@@ -39,8 +39,11 @@ const getDomos = (req, res) => DomoModel.findByOwner(req.session.account._id, (e
   return res.json({ domos: docs });
 });
 
+const domoFace = (req, res) => res.render('domoFace');
+
 module.exports = {
   makerPage,
   makeDomo,
   getDomos,
+  domoFace,
 };
